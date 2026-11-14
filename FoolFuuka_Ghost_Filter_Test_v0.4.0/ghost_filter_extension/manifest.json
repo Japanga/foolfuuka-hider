@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "FoolFuuka Ghost Filter (Test)",
+  "version": "0.4.0",
+  "description": "Hide individual FoolFuuka ghost posts with persistent filtering on Desuarchive.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://desuarchive.org/*", "https://*.desuarchive.org/*"],
+  "action": {"default_title": "Ghost Filter", "default_popup": "popup.html"},
+  "content_scripts": [{
+    "matches": ["https://desuarchive.org/*", "https://*.desuarchive.org/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}
