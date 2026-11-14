@@ -1,3 +1,20 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ghost Filter</title><style>
-body{width:290px;margin:0;padding:14px;font:13px/1.45 Arial,sans-serif;color:#ddd;background:#292929}h1{margin:0 0 8px;font-size:17px}.count{margin:12px 0;padding:10px;background:#383838;border-radius:4px}button{padding:7px 10px;cursor:pointer;background:#3b3b3b;color:#bbb;border:1px solid #666;border-radius:3px}#status{min-height:18px;color:#aaa}.note{font-size:11px;color:#888}
-</style></head><body><h1>Ghost Filter</h1><p>Individual FoolFuuka ghost-post filtering.</p><div class="count">Hidden ghost posts: <strong id="count">…</strong></div><button id="clear">Clear hidden-post list</button><p id="status" role="status"></p><p class="note">Version 0.4.0 · Desuarchive test build</p><script src="popup.js"></script></body></html>
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ghost Filter</title>
+<style>
+body{width:310px;margin:0;padding:14px;font:13px/1.45 Arial,sans-serif;color:#ddd;background:#292929}
+h1{margin:0 0 8px;font-size:17px}h2{font-size:13px;margin:15px 0 6px}
+.count{margin:12px 0;padding:10px;background:#383838;border-radius:4px}
+button{padding:7px 10px;cursor:pointer;background:#3b3b3b;color:#bbb;border:1px solid #666;border-radius:3px}
+textarea{box-sizing:border-box;width:100%;min-height:105px;resize:vertical;padding:8px;background:#202020;color:#ddd;border:1px solid #555;border-radius:4px;font:12px/1.5 Arial,sans-serif}
+#status{min-height:18px;color:#aaa}.note{font-size:11px;color:#888}
+.actions{display:flex;gap:7px;flex-wrap:wrap}
+</style></head><body>
+<h1>Ghost Filter</h1><p>Hide individual FoolFuuka ghost posts.</p>
+<div class="count">Hidden ghost posts: <strong id="count">…</strong></div>
+<h2>Keyword auto-filter</h2>
+<p class="note">One keyword or phrase per line. Matching ghost posts are hidden automatically; their Hide button remains available after Reveal.</p>
+<textarea id="keywords" spellcheck="false" placeholder="keyword one&#10;another phrase"></textarea>
+<div class="actions"><button id="save-keywords">Save keywords</button><button id="clear">Clear hidden-post list</button></div>
+<p id="status" role="status"></p><p class="note">Keyword matching is case-insensitive and checks the post's visible text.</p>
+<p class="note">Version 0.5.0 · Desuarchive test build</p><script src="popup.js"></script>
+</body></html>
