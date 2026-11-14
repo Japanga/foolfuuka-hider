@@ -1,4 +1,4 @@
-FoolFuuka hider allows you to hide /ghost/ posts on Desuarchive you disliked.
+FoolFuuka Hider allows you to hide /ghost/ posts on Desuarchive you disliked.
  <img src="https://i.imgur.com/eu5rs6k.png" alt="Live Demo" width="500">
 
  <img src="https://i.imgur.com/9gw8jeo.png" alt="Live Demo" width="500">
